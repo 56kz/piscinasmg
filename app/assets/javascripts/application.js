@@ -16,12 +16,12 @@
 //= require bootstrap
 //= require rails-ujs
 //= require activestorage
-//= require owl.carousel.min
+//= require owl.carousel.min.js
 //= require contact-form
-//= require scrollUp.min
-//= require magnific-popup.min
-//= require wow.min
-//= require particles.min
+//= require scrollUp.min.js
+//= require magnific-popup.min.js
+//= require wow.min.js
+//= require particles.min.js
 //= require particle
 //= require main
 //= require turbolinks
