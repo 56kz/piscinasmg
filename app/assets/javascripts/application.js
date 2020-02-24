@@ -16,6 +16,8 @@
 //= require bootstrap
 //= require rails-ujs
 //= require activestorage
+//= require particle
+//= require main
 //= require turbolinks
 //= require_tree .
 
