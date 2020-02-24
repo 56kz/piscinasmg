@@ -1,103 +1,480 @@
-<div id="piscinasmg">
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    <!-- Home-Area -->
+    <header class="home-area overlay hero-wrap js-fullheight" id="home_page">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row">
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="https://i.pinimg.com/originals/fc/48/56/fc4856039871c0daf9a8342cefaba9ad.jpg" alt="Los Angeles">
-        <div class="carousel-caption">
-         <h3>Piscinas MG</h3>
-         <p>Hacemos realidad tus sueños</p>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+
+                    <div class="space-80 hidden-xs"></div>
+                    <h1 class="wow fadeInUp home-title" data-wow-delay="0.4s">Disfruta tus mejores momentos</h1>
+                    <div class="space-20"></div>
+                    <div class="desc wow fadeInUp col-md-8 col-lg-8 col-md-offset-2" data-wow-delay="0.6s">
+                        <p>Con nosotros encuentras el respaldo que solo puede dar la experiencia, en <strong>Piscinas
+                                MG</strong> contamos con una
+                            larga trayectoria, todos nuestros clientes tienen altos indices de satisfacción. ¿Que
+                            esperas para iniciar tu proyecto?</p>
+                    </div>
+                    <div class="space-20"></div>
+                    <div class="space-100"></div>
+                    <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><span
+                            class="lnr lnr-laptop-phone"></span>Contactanos</a>
+                    <div class="space-100"></div>
+                    <div class="space-100"></div>
+                </div>
+ 
+            </div>
         </div>
-      </div>
+    </header>
+    <!-- Home-Area-End -->
 
-      <div class="item">
-        <img src="https://www.laughlinpools.com/wp-content/uploads/2019/09/Swimming-Pools-Installation-Ottawa.jpg" alt="Chicago">
-        <div class="carousel-caption">
-         <h3>Piscinas MG</h3>
-         <p>Hacemos realidad tus sueños</p>
+    <!-- About-Area -->
+    <section class="video-container" id="about_page">
+
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src=<%= asset_path 'video.mp4' %> type="video/mp4">
+        </video>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="page-title text-center">
+                        <div class="space-80"></div>
+                        <img src=<%= asset_path 'about-logo.png' %> alt="About Logo">
+                        <div class="space-20"></div>
+                        <h5 class="title text-white">Acerca de Nosotros</h5>
+                        <div class="space-50"></div>
+                        <h3 class="text-white">Somos una compañia con mas de 30 años de experiencia en
+                            proyectos de
+                            construcción y diseño de espacios para el confort y bienestar.</h3>
+                        <div class="space-20"></div>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="space-30"></div>
+        <div class="space-30"></div>
+    </section>
+    <!-- About-Area-End -->
+    <!-- Progress-Area -->
 
-      <div class="item">
-        <img src="https://cdnmedia.endeavorsuite.com/images/ThumbGenerator/Thumb.aspx?img=%2F%2Fcdnmedia.endeavorsuite.com%2Fimages%2Forganizationsstg%2F1802d3dd-c632-4d5d-b8d1-6a2ebbbaaf96%2Fctas%2FCTA1.jpg&w=825" alt="New York">
-        <div class="carousel-caption">
-         <h3>Piscinas MG</h3>
-         <p>Hacemos realidad tus sueños</p>
+    <!-- Progress-Area-End 
+    <!-- Video-Area -->
+    <!--<section class="video-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="video-photo">
+                        <img src="images/video-image.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=ScrDhTsX0EQ" class="popup video-button">
+                            <img src="images/play-button.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5 col-md-offset-1">
+                    <div class="space-60 hidden visible-xs"></div>
+                    <div class="page-title">
+                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">VIDEO FEATURES</h5>
+                        <div class="space-10"></div>
+                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Grat Application Ever</h3>
+                        <div class="space-20"></div>
+                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt
+                                ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+                        </div>
+                        <div class="space-50"></div>
+                        <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>-->
+    <!-- Video-Area-End -->
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<br><br><br><br><br>
-
-<div id="shopping">
-  <div class="row">
-  <h1>Nuestros Productos</h1>
-    <div class="col-sm-6">
-      <div class="thumbnail">
-        <img src="..." alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    <!-- Feature-Area -->
+    <section class="feature-area section-padding-top" id="features_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="page-title text-center">
+                        <h5 class="title">Features</h5>
+                        <div class="space-10"></div>
+                        <h3>Powerful Features As Always</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-rocket"></i>
+                        </div>
+                        <h4>Fast &amp; Powerful</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-paperclip"></i>
+                        </div>
+                        <h4>Easily Editable</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cloud-download"></i>
+                        </div>
+                        <h4>Cloud Storage</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-4">
+                    <figure class="mobile-image">
+                        <img src=<%= asset_path 'feature-image.png' %> alt="Feature Photo">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-clock"></i>
+                        </div>
+                        <h4>Easy Notifications</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                        </div>
+                        <h4>Fully Responsive</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cog"></i>
+                        </div>
+                        <h4>Editable Layout</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="thumbnail">
-        <img src="..." alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    </section>
+    <!-- Feature-Area-End -->
+    <!-- Testimonial-Area -->
+    <section class="testimonial-area" id="testimonial_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Testimonials</h5>
+                        <h3 class="dark-color">Our Client Loves US</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="team-slide">
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src=<%= asset_path 'team-1.png' %> alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod
+                                tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src=<%= asset_path 'team-2.jpg' %> alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod
+                                tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src= <%= asset_path 'team-3.jpg' %> alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod
+                                tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src=<%= asset_path 'team-1.png' %> alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod
+                                tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src=<%= asset_path 'team-2.jpg' %> alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod
+                                tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src=<%= asset_path 'team-3.jpg' %> alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod
+                                tempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="thumbnail">
-        <img src="..." alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    </section>
+    <!-- Testimonial-Area-End -->
+    <!-- Gallery-Area -->
+    <section class="gallery-area text-center" id="gallery_page">
+        <div class="container-fluid h-20">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 gallery-slider">
+                    <div class="gallery-slide">
+                        <div class="item"><img src= <%= asset_path 'gallery-1.jpg' %> alt="" height="1000px"></div>
+                        <div class="item"><img src= <%= asset_path 'gallery-2.jpg' %> alt="" height="1000px"></div>
+                        <div class="item"><img src= <%= asset_path 'gallery-3.jpg' %> alt="" height="1000px"></div>
+                        <div class="item"><img src= <%= asset_path 'gallery-4.jpg' %> alt="" height="1000px"></div>
+                        <div class="item"><img src= <%= asset_path 'gallery-5.jpg' %> alt="" height="1000px"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="thumbnail">
-        <img src="..." alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <div class="space-60"></div>
+    </section>
+    <!-- Gallery-Area-End -->
+    <!-- How-To-Use -->
+    <!-- <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="page-title">
+                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Our features</h5>
+                        <div class="space-10"></div>
+                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Aour Approach of Design is Prety
+                            Simple and Clear</h3>
+                    </div>
+                    <div class="space-20"></div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut
+                            labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+                    </div>
+                    <div class="space-50"></div>
+                    <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+                    <div class="space-60 hidden visible-xs"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-clock"></i>
+                        </div>
+                        <h4>Easy Notifications</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="space-50"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                        </div>
+                        <h4>Fully Responsive</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="space-50"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cog"></i>
+                        </div>
+                        <h4>Editable Layout</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section> -->
+    <!-- How-To-Use-End -->
+
+    <!--Price-Area -->
+    <section class="section-padding price-area" id="price_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Pricing Plan</h5>
+                        <h3 class="dark-color">Our Awesome Pricing Plan</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-rocket"></span>
+                            </div>
+                            <h4 class="upper">Free</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Easy Installations</li>
+                                <li>Unlimited support</li>
+                                <li>Uniqe Elements</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#36;</sup> <span class="rate">0</span> <small>/Month</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="#" class="bttn-white">Purchase</a>
+                        </div>
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-diamond"></span>
+                            </div>
+                            <h4 class="upper">Medium</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Easy Installations</li>
+                                <li>Unlimited support</li>
+                                <li>Free Forever</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#36;</sup> <span class="rate">49</span> <small>/Month</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="#" class="bttn-white">Purchase</a>
+                        </div>
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-pie-chart"></span>
+                            </div>
+                            <h4 class="upper">Business</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Easy Installations</li>
+                                <li>Unlimited support</li>
+                                <li>Free Forever</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#36;</sup> <span class="rate">99</span> <small>/Month</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="#" class="bttn-white">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Price-Area-End -->
+
+    <!-- Footer-Area -->
+    <footer class="footer-area" id="contact_page">
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-title text-center">
+                            <h5 class="title">Contact US</h5>
+                            <h3 class="dark-color">Find Us By Bellow Details</h3>
+                            <div class="space-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-map-marker"></span>
+                            </div>
+                            <p>8-54 Paya Lebar Square <br /> 60 Paya Lebar Roa SG, Singapore</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-phone-handset"></span>
+                            </div>
+                            <p>+65 93901336 <br /> +65 93901337</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-envelope"></span>
+                            </div>
+                            <p>yourmail@gmail.com <br /> backpiper.com@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Bootom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 text-center">
+
+                        <span>Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved</span>
+
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Bootom-End -->
+    </footer>
+    <!-- Footer-Area-End -->
 
 
-  </div>
-</div>
 
-
-<div id="proyectomg">
-
-</div>
+    <!--Plugin-JS-->
+    <script src=<%= asset_path 'owl.carousel.min.js' %>></script>
+    <script src=<%= asset_path 'contact-form.js' %>></script>
+    <script src=<%= asset_path 'scrollUp.min.js' %>></script>
+    <script src=<%= asset_path 'magnific-popup.min.js' %>></script>
+    <script src=<%= asset_path 'wow.min.js' %>></script>
+    <script src=<%= asset_path 'particles.min.js' %>></script>
+    <script src=<%= asset_path 'particle.js' %>></script>
+    <!--Main-active-JS-->
+    <script src=<%= asset_path 'main.js' %>></script>
