@@ -31,42 +31,42 @@
 
 </head>
 
-<body data-spy="scroll data-target=".mainmenu-area">
+<body data-spy="scroll" data-target=".mainmenu-area">
 
     <!-- Preloader-content -->
     <div class="preloader">
         <span><i class="lnr lnr-drop"></i></span>
     </div>
 
-    <a href="https://api.whatsapp.com/send?phone=573134123712&text=Hola, quisiera conocer más sobre sus productos."
-        class="whatsapp-api-link" target="_blank">
-        <i class="fa fa-whatsapp whatsapp-api"></i>
-    </a>
-
     <!-- MainMenu-Area -->
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
 
-        <div class="container-fluid">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand text-white" href="#"><img src=<%= asset_path 'logo.png' %> alt="logo"></a>
+                <a class="navbar-brand" href="#about_page"><img src=<%= asset_path 'logo.png' %> alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="primary_menu">
                 <ul class="nav navbar-nav mainmenu">
-                    <li class="active"><a href="#home_page">Inicio</a></li>
-                    <li><a href="#about_page">Nosotros</a></li>
-                    <li><a href="#features_page">Proyectos</a></li>
-                    <li><a href="#gallery_page">Galeria</a></li>
+                    <li class="active"><a href="#about_page">Inicio</a></li>
+                    <li><a href="#features_page">Galeria</a></li>
+                    <li><a href="#video_section">Proyecto MG</a></li>
                     <li><a href="#contact_page">Contacto</a></li>
                 </ul>
             </div>
-        </div>
+
     </nav>
+
     <!-- MainMenu-Area-End -->
+
+    <a href="https://api.whatsapp.com/send?phone=573134123712&text=Hola, quisiera conocer más sobre sus productos."
+        class="whatsapp-api-link" target="_blank">
+        <i class="fa fa-whatsapp whatsapp-api"></i>
+    </a>
 
   <%= yield %>
 </body>

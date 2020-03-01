@@ -1,7 +1,3 @@
-// Place all the styles related to the Page controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 /*-----------------------------------------------------------------------------------
 Template Name: Appy HTML5 Template,
 Template URI: http://www.themectg.com
@@ -301,7 +297,7 @@ input:-webkit-autofill:focus {
 /*-- 5. MainMenu-Area --*/
 
 .mainmenu-area {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -320,7 +316,7 @@ input:-webkit-autofill:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(15, 76, 129);
+    background: transparent;
     /*background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
     background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
     background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
@@ -377,18 +373,19 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area ul.nav.navbar-nav li a {
+    width:150px;
     color: #ffffff;
     padding: 10px 2px;
     text-transform: capitalize;
     background: transparent;
-    font-weight: 600;
+    font-weight: 800;
     border-bottom: 2px solid transparent;
     margin: 0 15px;
 }
 
 .mainmenu-area ul.nav.navbar-nav li a:hover,
 .mainmenu-area ul.nav.navbar-nav li.active a {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #fff;
 }
 
 .mainmenu-area .navbar-brand {
@@ -397,7 +394,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area .navbar-brand img {
-    height: 40px;
+    height: 60px;
 }
 
 /*-- 6. Page-Title --*/
@@ -428,7 +425,7 @@ input:-webkit-autofill:focus {
 
 .home-area {
     width: 100%;
-    background: url(<%= asset_path 'header-bg.jpg' %>) no-repeat scroll center bottom / cover; 
+    background: url('images/header-bg.jpg') no-repeat scroll center bottom / cover; 
     padding-top: 26vh;
     color: #ffffff;
     margin-bottom: 0px;
@@ -443,17 +440,14 @@ input:-webkit-autofill:focus {
 /*-- 8. Progress-Area --*/
 
 .progress-area {
-    /*background-image: url('images/progress-bg.jpg');
+    background-image: url(<%= asset_path 'progress-bg.jpg' %>);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: auto 100%;*/
+    background-size: auto 100%;
     margin-top: 0px;
     margin-bottom: 220px;
 }
 
-.progress-area .parallax-image {
-    margin-right: 0;
-}
 
 /*-- 9. Video-Area --*/
 
@@ -488,17 +482,17 @@ input:-webkit-autofill:focus {
 /*-- 10. Feature-Area --*/
 
 .feature-area {
-    color: #ffffff;
-    background-color: #5e88fc;
-    background-image: url(<%= asset_path 'feature-bg.png' %>);
+    color: #5c5c5c;
+    background-color: #fff;
+    background-image: url(<%= asset_path 'wave.svg' %>);
     background-position: bottom -120px center;
     background-repeat: no-repeat;
     background-size: auto 94%;
-    margin-bottom: 142px;
+    margin-bottom: 0px;
 }
 
 .feature-area .page-title .title {
-    color: #ffffff;
+    color: #646464;
 }
 
 .feature-area .mobile-image {
@@ -576,11 +570,14 @@ input:-webkit-autofill:focus {
 /*-- 12. Testimonial-Area --*/
 
 .testimonial-area {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     padding-top: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
 }
 
 .team-box {
+    background-color: rgb(255, 255, 255);
     position: relative;
     padding: 55px 30px 30px 30px;
     -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.1);
@@ -600,18 +597,9 @@ input:-webkit-autofill:focus {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
 }
 
-.team-box .team-image {
-    position: absolute;
-    top: -40px;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background-color: #ffffff;
-    text-align: center;
-    overflow: hidden;
-    border: 5px solid #ffffff;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+.team-box img {
+    width: 60px;
+    height: 180px;
 }
 
 .team-box h4 {
@@ -717,7 +705,7 @@ input:-webkit-autofill:focus {
 /*-- 14. Download-Area --*/
 
 .download-area {
-    background-image: url(<%= asset_path 'download-bg.png' %>);
+    background-image: url('images/download-bg.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -906,7 +894,7 @@ input:-webkit-autofill:focus {
 /*-- 17. Subscribe-Form --*/
 
 .subscribe-area {
-    background: url(<%= asset_path 'subscribe-bg.jpg' %>) no-repeat scroll center center / cover;
+    background: url('images/subscribe-bg.jpg') no-repeat scroll center center / cover;
 }
 
 .subscribe-form {
@@ -1019,14 +1007,28 @@ input:-webkit-autofill:focus {
 /*-- 19. ScrollUp-Button --*/
 
 #scrollUp {
-    margin-left: 5%;
-    bottom: 0;
-    height: 90px;
-    width: 90px;
+    right: 35px;
+    bottom: -10px;
+    height: 60px;
+    width: 60px;
     text-align: center;
     line-height: 60px;
-    font-size: 40px;
-    color: rgba(83, 34, 219, 0.61);
+    font-size: 30px;
+}
+
+#scrollUp{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:40px;
+	background-color: rgb(43, 28, 184);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
 }
 
 .preloader {
@@ -1337,7 +1339,7 @@ input:-webkit-autofill:focus {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
+	bottom:90px;
 	right:40px;
 	background-color:#25d366;
 	color:#FFF;
@@ -1382,14 +1384,156 @@ input:-webkit-autofill:focus {
     z-index: 2;
   }
 
-  
-  #particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%; }
 
-    
+/* Common style */
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 600px;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+  
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+figure.effect-oscar {
+	background: -webkit-linear-gradient(45deg, #2e19a5 0%, #aa0daf 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #eb1a82 0%,#1a56d6 40%,#08852d 100%);
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+	padding: 3em;
+	background-color: rgba(58,52,42,0.7);
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+figure.effect-oscar h2 {
+	margin: 2% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+    color:#000;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}

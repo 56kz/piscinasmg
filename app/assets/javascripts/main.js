@@ -146,6 +146,7 @@
             =================*/
             new WOW().init({
                 mobile: false,
+                animateClass: 'animated'
             });
         });
     

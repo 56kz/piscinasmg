@@ -13,11 +13,10 @@
 
 //= require jquery3
 //= require popper
+//= require jquery-1.12.4.min
 //= require bootstrap
 //= require rails-ujs
 //= require activestorage
-//= require particles.min
-//= require particle
 //= require main
 //= require turbolinks
 //= require_tree .
