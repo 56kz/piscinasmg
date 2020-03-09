@@ -1,7 +1,7 @@
 
 
     var main = function(){
-        
+
     (function ($) {
 
         "use strict";
@@ -10,14 +10,6 @@
         ==========================*/
         $(".mainmenu-area #primary_menu li a").on("click", function () {
             $(".navbar-collapse").removeClass("in");
-        });
-        /* Scroll to top
-        ===================*/
-        $.scrollUp({
-            scrollText: '<i class="fa fa-arrow-up" aria-hidden="true"></i>',
-            easingType: 'linear',
-            scrollSpeed: 900,
-            animation: 'fade'
         });
         /* testimonials Slider Active
         =============================*/
@@ -121,10 +113,10 @@
                 },
                 zoom: {
                     enabled: true, // By default it's false, so don't forget to enable it
-    
+
                     duration: 300, // duration of the effect, in milliseconds
                     easing: 'ease-in-out', // CSS transition easing function
-    
+
                     // The "opener" function should return the element from which popup will be zoomed in
                     // and to which popup will be scaled down
                     // By defailt it looks for an image tag:
@@ -149,18 +141,18 @@
                 animateClass: 'animated'
             });
         });
-    
-    
+
+
         var fullHeight = function() {
-    
+
             $('.js-fullheight').css('height', $(window).height());
             $(window).resize(function(){
                 $('.js-fullheight').css('height', $(window).height());
             });
-    
+
         };
         fullHeight();
-    
+
     })(jQuery);
     //finish turbolinks load wrapper
 
