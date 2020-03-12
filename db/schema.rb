@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_093400) do
+ActiveRecord::Schema.define(version: 2020_03_12_021355) do
 
   create_table "proyects", force: :cascade do |t|
     t.string "name"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_03_11_093400) do
     t.text "linkten"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "subtitle"
   end
 
 end
