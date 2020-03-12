@@ -10,9 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_03_11_093400) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  create_table "proyects", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.text "youtube"
+    t.text "linkone"
+    t.text "linktwo"
+    t.text "linkthree"
+    t.text "linkfour"
+    t.text "linkfive"
+    t.text "linksix"
+    t.text "linkseven"
+    t.text "linkeight"
+    t.text "linknine"
+    t.text "linkten"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
