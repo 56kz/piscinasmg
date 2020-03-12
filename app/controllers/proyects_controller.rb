@@ -16,6 +16,10 @@ class ProyectsController < ApplicationController
     end
   end
 
+  def show
+    @proyect = Proyect.find(params[:id])
+  end
+
   private
   def proyect_params
     params.require(:proyect).permit(:name, :subtitle, :description, :youtube, :linkone, :linktwo, :linkthree, :linkfour, :linkfive, :linksix, :linkseven, :linkeight, :linknine, :linkten)

@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get '/proyects', to: 'proyects#index'
   get '/proyects/new', to: 'proyects#new'
   post '/proyects', to: 'proyects#create'
+  get '/proyects/:id', to: 'proyects#show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
