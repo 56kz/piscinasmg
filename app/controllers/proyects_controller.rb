@@ -20,6 +20,19 @@ class ProyectsController < ApplicationController
     @proyect = Proyect.find(params[:id])
   end
 
+  def edit
+    @proyect = Proyect.find(params[:id])
+  end
+
+  def update
+    @proyect = Proyect.find(params[:id])
+    if @proyect.update(proyect_params)
+      redirect_to proyects_path
+    else
+      render :edit
+    end
+  end
+
   private
   def proyect_params
     params.require(:proyect).permit(:name, :subtitle, :description, :youtube, :linkone, :linktwo, :linkthree, :linkfour, :linkfive, :linksix, :linkseven, :linkeight, :linknine, :linkten)

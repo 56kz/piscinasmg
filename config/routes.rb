@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   root 'page#index'
 
   get '/proyects', to: 'proyects#index'
-  get '/proyects/new', to: 'proyects#new'
+  get '/proyects/new', to: 'proyects#new', as: 'new_proyect'
   post '/proyects', to: 'proyects#create'
-  get '/proyects/:id', to: 'proyects#show'
+  get '/proyects/:id', to: 'proyects#show', as: 'proyect'
+  get '/proyects/:id/edit', to: 'proyects#edit'
+  patch '/proyects/:id', to: 'proyects#update'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
