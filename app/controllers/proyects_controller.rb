@@ -33,6 +33,13 @@ class ProyectsController < ApplicationController
     end
   end
 
+  def destroy
+    proyect = Proyect.find(params[:id])
+    proyect.destroy
+
+    redirect_to proyects_path      
+  end
+
   private
   def proyect_params
     params.require(:proyect).permit(:name, :subtitle, :description, :youtube, :linkone, :linktwo, :linkthree, :linkfour, :linkfive, :linksix, :linkseven, :linkeight, :linknine, :linkten)
