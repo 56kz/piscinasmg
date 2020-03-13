@@ -1,110 +1,91 @@
-<div class="container h-100">
-    <div class="row">
-
+<div class="container-fluid feature-area">
+    <div class="row mx-auto">
         <div class="space-100"></div>
         <div class="space-30"></div>
+        <div class="col-md-10 col-sm-offset-1">
+            <div class="col-md-6">
+                <div class="page-title text-center">
+                    <h5 class="title">
+                        <%= @proyect.name %>
+                    </h5>
+                    <h3>
+                        <%= @proyect.subtitle %>
+                    </h3>
+                    <div class="space-10"></div>
+                </div>
+                <p class="text-justify">
+                    <%= @proyect.description %>
+                </p>
 
-        <div class="col-md-6">
+                <div class="space-30"></div>
 
-            <div class="page-title text-center">
-                <h5 class="title">
-                    <%= @proyect.name %>
-                </h5>
-                <h3>
-                    <%= @proyect.subtitle %>
-                </h3>
-                <div class="space-10"></div>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/pUY2j9Z6P4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
             </div>
-            <p>
-                <%= @proyect.description %>
-            </p>
 
-            <div class="space-30"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linkone %> alt="imagen piscina">
+                    </div>
 
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/pUY2j9Z6P4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linktwo %> alt="imagen piscina">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linkthree %> alt="imagen piscina">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linkfour %> alt="imagen piscina">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linkfive %> alt="imagen piscina">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linksix %> alt="imagen piscina">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linkseven %> alt="imagen piscina">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src=<%=@proyect.linkeight %> alt="imagen piscina">
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="col-md-6">
-
-            <div class="row">
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linkone %> alt="imagen piscina">
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linktwo %> alt="imagen piscina">
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linkthree %> alt="imagen piscina">
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linkfour %> alt="imagen piscina">
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linkfive %> alt="imagen piscina">
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linksix %> alt="imagen piscina">
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linkseven %> alt="imagen piscina">
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <img src=<%=@proyect.linkeight %> alt="imagen piscina">
-                </div>
-
-            </div>
-
-
-        </div>
+        <div class="space-100"></div>
 
     </div>
-
 </div>
 
-
-<div class="space-100"></div>
-<div class="space-100"></div>
-<div class="space-100"></div>
-
-
-    <!-- Footer-Bootom -->
-    <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 text-center">
-    
-                        <span> Powered by <a href="https://56kz.github.io/#contact" target="_blank" style="color:black">Verzion56</a></span>
-    
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-    
-                </div>
+<!-- Footer-Bootom -->
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 text-center">
+                <span> Powered by <a href="https://56kz.github.io/#contact" target="_blank" style="color:black">Verzion56</a></span>
+                <div class="space-30 hidden visible-xs"></div>
             </div>
+
         </div>
-        <!-- Footer-Bootom-End -->
-    </footer>
-    <!-- Footer-Area-End -->
+    </div>
+</div>
+<!-- Footer-Bootom-End -->
+</footer>
+<!-- Footer-Area-End -->
 
 <script>
 
