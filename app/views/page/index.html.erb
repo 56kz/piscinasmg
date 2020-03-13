@@ -41,39 +41,50 @@
 
             <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
                 <figure class="effect-oscar">
-                    <img src=<%=asset_path 'gallery-1.jpg' %> alt="foto">
+                    <img src="https://piscinasmg.s3-sa-east-1.amazonaws.com/norteamerica/norteamerica1.jpg" alt="foto">
                     <figcaption>
-                        <h2>HELICONIAS <span>DEL LAGO</span></h2>
-                        <p>Un proyecto elaborado en Santa Fe de Antioquia</p>
+                        
+                            <h2><a href="/proyects/1">Casa <span>Norte América</span></a></h2>
+                        
+                        <p>Proyecto ubicado al norte de Medellín, cuenta con piscina climatizada borde infinito</p>
                     </figcaption>
                 </figure>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="space-30"></div>
                 <figure class="effect-oscar">
-                    <img src=<%=asset_path 'gallery-2.jpg' %> alt="foto">
+                    <img src="https://piscinasmg.s3-sa-east-1.amazonaws.com/California/cal1.jpg" alt="foto">
                     <figcaption>
-                        <h2>ANDRES<span>DE LA VID</span></h2>
-                        <p>Un proyecto elaborado en Santa Fe de Antioquia</p>
+                        
+                            <h2><a href="/proyects/2">Casa<br><span> California</span></a></h2>
+                        
+                        <p>Proyecto situado en al norte de la ciudad de Medellín, cuenta con una piscina inteligente
+                            climatizada</p>
                     </figcaption>
                 </figure>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
                 <figure class="effect-oscar">
-                    <img src=<%=asset_path 'gallery-3.jpg' %> alt="foto">
+                    <img src="https://piscinasmg.s3-sa-east-1.amazonaws.com/Escobero/escobero1.jpg" alt="foto">
                     <figcaption>
-                        <h2>FLORES <span>DEL CAMPO</span></h2>
-                        <p>Un proyecto elaborado en Santa Fe de Antioquia</p>
+                        
+                            <h2><a href="/proyects/3">Casa<br><span>DOM</span></a></h2>
+                        
+                        <p>Proyecto ubicado en el sur de la ciudad de Medellín, cuenta con piscina inteligente con
+                            equipos ahorradores de energía de última tecnología</p>
                     </figcaption>
                 </figure>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-                <div class="space-30"></div>
+                <div class="space-50"></div>
                 <figure class="effect-oscar">
-                    <img src=<%=asset_path 'gallery-4.jpg' %> alt="foto">
+                    <img src="https://piscinasmg.s3-sa-east-1.amazonaws.com/Estrada/estra2.jpg" alt="foto">
                     <figcaption>
-                        <h2>VERDE <span>ELEFANTE</span></h2>
-                        <p>Un proyecto elaborado en Santa Fe de Antioquia</p>
+                        
+                            <h2><a href="/proyects/4">Casa<br><span> Estrada</span></a></h2>
+                        
+                        <p>Proyecto ubicado en el oriente de Medellín, cuenta con un maravilloso SPA de hidromasajes
+                            BullFrog R7L</p>
                     </figcaption>
                 </figure>
             </div>
@@ -278,6 +289,14 @@
             var $parent = $(this).parent();
             $parent.addClass('active');
             e.preventDefault();
+        });
+
+        $('.preloader').fadeOut(0);
+        /*WoW js Active
+        =================*/
+        new WOW().init({
+            mobile: false,
+            animateClass: 'animated'
         });
 
     });
