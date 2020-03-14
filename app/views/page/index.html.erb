@@ -327,7 +327,11 @@
                     dataType: "json",
                     data: form.serializeObject()
                 }).success(
-                    alert("Information submited!!!")
+                    Swal.fire(
+                        '¡Muy bien!',
+                        'Pronto nos pondremos en contacto contigo.',
+                        'success'
+                      )
                 );
             })
 
