@@ -269,6 +269,10 @@
         position: static;
         margin-bottom: 30px;
     }
+    .feature-area figcaption h2{
+        font-size: 50px;
+    }
+
 }
 
 /* Wide Mobile Layout: 480px. */
