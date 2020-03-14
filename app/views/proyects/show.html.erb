@@ -39,7 +39,7 @@
                   }'>
 
                   <% @images.each do |image| %>
-                    <a href=/assets/resize/<%=image.image_name %> data-ngthumb=/assets/thumbs/<%=image.thumb_name %>></a>
+                    <a href=<%=asset_path image.image_name %> data-ngthumb=<%=asset_path image.thumb_name %>></a>
                 <% end %>
 
             </div>
