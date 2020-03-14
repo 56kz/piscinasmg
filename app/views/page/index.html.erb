@@ -44,9 +44,9 @@
 
                     <img src=<%=asset_path 'resize_norteamerica4.jpg' %> alt="foto">
                     <figcaption>
-                        
-                            <h2><a href="/proyects/1?project_name=norteamerica">Casa<br> <span>Norte América</span></a></h2>
-                        
+
+                        <h2><a href="/proyects/1?project_name=norteamerica">Casa<br> <span>Norte América</span></a></h2>
+
                         <p>Piscina Lúdica</p>
                     </figcaption>
                 </figure>
@@ -55,23 +55,23 @@
                 <div class="space-30"></div>
                 <figure class="effect-oscar">
                     <img src=<%=asset_path 'resize_cal1.jpg' %> alt="foto">
-                    
+
                     <figcaption>
-                        
-                            <h2><a href="/proyects/2?project_name=cal">Casa<br><span>California</span></a></h2>
-                        
+
+                        <h2><a href="/proyects/2?project_name=cal">Casa<br><span>California</span></a></h2>
+
                         <p>Pool & Spa</p>
                     </figcaption>
                 </figure>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
                 <figure class="effect-oscar">
-                
+
                     <img src=<%=asset_path 'resize_escobero1.jpg' %> alt="foto">
                     <figcaption>
-                        
-                            <h2><a href="/proyects/3?project_name=escobero">Casa<br><span>DOM</span></a></h2>
-                        
+
+                        <h2><a href="/proyects/3?project_name=escobero">Casa<br><span>DOM</span></a></h2>
+
                         <p>Pool</p>
                     </figcaption>
                 </figure>
@@ -79,12 +79,12 @@
             <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
                 <div class="space-50"></div>
                 <figure class="effect-oscar">
-                
+
                     <img src=<%=asset_path 'resize_estra7.jpg' %> alt="foto">
                     <figcaption>
-                        
-                            <h2><a href="/proyects/4?project_name=estra">Casa<br><span> Estrada</span></a></h2>
-                        
+
+                        <h2><a href="/proyects/4?project_name=estra">Casa<br><span> Estrada</span></a></h2>
+
                         <p>Spa</p>
                     </figcaption>
                 </figure>
@@ -239,15 +239,17 @@
                 <div class="col-md-8 col-md-offset-2">
                     <form class="singup-form contact-form">
                         <div class="row">
+                            <input type="hidden" id="date" name="fecha" value="CurrentDate"> 
                             <div class="col-md-6">
-                                <input type="text" placeholder="Correo Electrónico">
+                                <input type="text" name="correo" placeholder="Correo Electrónico">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" placeholder="Teléfono">
+                                <input type="text" name="telefono" placeholder="Teléfono">
                             </div>
                             <div class="col-md-12 text-center">
-                                <textarea placeholder="Mensaje"></textarea>
-                                <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Enviar</a>
+                                <textarea placeholder="Mensaje" name="texto"></textarea>
+                                <button type="submit" id="submit-form" class="bttn-default wow fadeInUp" data-wow-delay="0.2s"
+                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -300,11 +302,53 @@
             animateClass: 'animated'
         });
 
-
         main();
 
-
     });
+
+
+    var d = new Date();
+
+    // Set the value of the "date" field
+    document.getElementById("date").value = d.toDateString();
+
+    (function ($) {
+        $(document).ready(function () {
+
+            var form = $('.contact-form'),
+                url = 'https://script.google.com/macros/s/AKfycbxH0oXqwHe6cwmTPqQ0pM4JtNNN6aL_Jzud4jK2ks9w-UhwbHs/exec'
+
+
+            $('#submit-form').on('click', function (e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: form.serializeObject()
+                }).success(
+                    alert("Information submited!!!")
+                );
+            })
+
+        });
+    })(jQuery);
+
+    $.fn.serializeObject = function() {
+	var o = {};
+	var a = this.serializeArray();
+	$.each(a, function() {
+		if (o[this.name]) {
+			if (!o[this.name].push) {
+				o[this.name] = [o[this.name]];
+			}
+			o[this.name].push(this.value || '');
+		} else {
+			o[this.name] = this.value || '';
+		}
+	});
+	return o;
+};
 
 
 </script>
