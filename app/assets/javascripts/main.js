@@ -158,7 +158,5 @@
 
       };
 
-$(document).on('turbolinks:load', function() {
-    console.log("page loaded")
-    main();
-});
+
+main();

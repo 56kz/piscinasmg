@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_12_021355) do
+ActiveRecord::Schema.define(version: 2020_03_14_025328) do
+
+  create_table "project_images", force: :cascade do |t|
+    t.string "image_name"
+    t.string "thumb_name"
+    t.string "project_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "proyects", force: :cascade do |t|
     t.string "name"

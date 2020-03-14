@@ -18,6 +18,7 @@ class ProyectsController < ApplicationController
 
   def show
     @proyect = Proyect.find(params[:id])
+    @images=ProjectImage.where(project_name: params[:project_name])
   end
 
   def edit
@@ -42,7 +43,7 @@ class ProyectsController < ApplicationController
 
   private
   def proyect_params
-    params.require(:proyect).permit(:name, :subtitle, :description, :youtube, :linkone, :linktwo, :linkthree, :linkfour, :linkfive, :linksix, :linkseven, :linkeight, :linknine, :linkten)
+    params.require(:project_image).permit(:project_name)
   end
 
 end

@@ -25,50 +25,30 @@
             </div>
 
             <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linkone %> alt="imagen piscina">
-                    </div>
 
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linktwo %> alt="imagen piscina">
-                    </div>
+                <div id="nanogallery2" data-nanogallery2='{
+                    "thumbnailHeight":  400,
+                    "thumbnailWidth":   400,
+                    "thumbnailBorderHorizontal": 0,
+                    "thumbnailBorderVertical":   0,
+                    "thumbnailL1GutterHeight":   20,   "thumbnailL1GutterWidth":    20,
+                    "thumbnailStacks":           4,
+                    "thumbnailStacksTranslateZ": 0.3,
+                    "thumbnailStacksRotateX":    0.9,
+                    "galleryBuildInit2":         "perspective_900px|perspective-origin_50% 150%"
+                  }'>
 
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linkthree %> alt="imagen piscina">
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linkfour %> alt="imagen piscina">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linkfive %> alt="imagen piscina">
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linksix %> alt="imagen piscina">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linkseven %> alt="imagen piscina">
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <img src=<%=@proyect.linkeight %> alt="imagen piscina">
-                    </div>
-                </div>
+                  <% @images.each do |image| %>
+                    <a href=/assets/resize/<%=image.image_name %> data-ngthumb=/assets/thumbs/<%=image.thumb_name %>></a>
+                <% end %>
 
             </div>
 
         </div>
 
-        <div class="space-100"></div>
-
-    </div>
+        <div class="space-50"></div>
+        </div>
+        </div>
 </div>
 
 <!-- Footer-Bootom -->
@@ -90,5 +70,6 @@
 <script>
 
     $(".mainmenu-area").css("background-color", "rgba(0, 0, 0, 0.6)");
+    $('.preloader').fadeOut(500);
 
 </script>
